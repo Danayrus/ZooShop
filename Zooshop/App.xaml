@@ -1,0 +1,33 @@
+﻿<Application x:Class="Zooshop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Zooshop"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="Buttons" TargetType="Button">
+            <Setter Property="FontFamily" Value="Berlin Sans FB Demi Bold"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Background" Value="#FFD0AA"/>
+            <Setter Property="Foreground" Value="#5393E2"/>
+            <Style.Triggers>
+                <Trigger   Property="IsMouseOver"   Value="True">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <RotateTransform Angle="3"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Foreground" Value="Yellow"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="Title" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Berlin Sans FB Demi Bold"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Foreground" Value="#5393E2"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Application.Resources>
+</Application>

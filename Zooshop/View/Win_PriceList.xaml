@@ -1,0 +1,28 @@
+﻿<Window x:Class="Zooshop.View.Win_PriceList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zooshop.View"
+        mc:Ignorable="d"
+        Title="Прайс-лист" Height="450" Width="800" Background="#FFE3AA" Icon="/Resources/Logo.png">
+    <Grid Width="auto" Height="auto">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            
+        </Grid>
+        <Grid Grid.Row="1">
+            <Image Source="\Resources\paws.png" Width="800" Visibility="Visible" Stretch="UniformToFill"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <TextBlock Text="@akindinovadana" Margin="10,0,-10,0" FontFamily="Berlin Sans FB Demi Bold" FontSize="19" Foreground="#5393E2"/>
+            <TextBlock Text="akindinovadana@gmail.com" Margin="527,0,-340,0" FontFamily="Berlin Sans FB Demi Bold" FontSize="19" Foreground="#5393E2"/>
+        </Grid>
+    </Grid>
+</Window>
